@@ -1,0 +1,10 @@
+{
+    "type": "posgre",
+    "host": "localhost",
+    "port": 696,
+    "username": "postgre",
+    "password": "root",
+    "login": true,
+    "database": "",
+    "synchronize": true
+}
