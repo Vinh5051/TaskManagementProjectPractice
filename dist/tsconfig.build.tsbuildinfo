@@ -3030,11 +3030,59 @@
         "signature": "23b830c3524420477b0ed7c96b6da332b01f92b2257b14e7407ed4be6a246c5c"
       },
       "../src/domain/user/user.module.ts": {
-        "version": "1e658cfc07fede2760f43307d60e14d5c2dddb6fca2cf5517056e2b5bb32aeb7",
+        "version": "8c7f9995cd993e475edea07c33c97006811f74e6c5d05ddce628ba5181022c87",
         "signature": "482b8f0d35a3d453500a15b6c6057c1e4c40baa4329b39da9e1026d8e1de4329"
       },
+      "../src/domain/epic/entities/epic.entity.ts": {
+        "version": "d4ded8d1101ea5f6814af117a81c2827bf59f3b289bf6e3edb4dbffcade315cf",
+        "signature": "d7965e9a59d93b56f6420784aa925f11569cbe8aa8c2909b3ef19802f2b98241"
+      },
+      "../src/domain/epic/entities/index.ts": {
+        "version": "9f9c81124f28628ed151b4903453dfe7a4ebfa74025bbb6589fb9d146e54111b",
+        "signature": "9f9c81124f28628ed151b4903453dfe7a4ebfa74025bbb6589fb9d146e54111b"
+      },
+      "../src/domain/epic/repository/epic.repository.ts": {
+        "version": "e56b1b4d35dc62eb937a9bd4ca1f118ad8f97d90df5733d031973a871d9efc3e",
+        "signature": "13064578c621b94544f3223776cf9142db5e477984a074ed6896da6fb038ae54"
+      },
+      "../src/domain/epic/repository/index.ts": {
+        "version": "17c49c79fc327e96a4ec9ea16978277e51c6008cd34b9866308e364670f7abc1",
+        "signature": "17c49c79fc327e96a4ec9ea16978277e51c6008cd34b9866308e364670f7abc1"
+      },
+      "../src/domain/epic/dtos/create-epic.dto.ts": {
+        "version": "6f4072fab72fea17ab3f275fd79eab56ea52badad6a5761b5d7890284f08487c",
+        "signature": "2bac47fe7f2ab77e619a007f5ba52cc665923d38ede581b4e28c548c145db572"
+      },
+      "../src/domain/epic/dtos/filter.dto.ts": {
+        "version": "01ac4f7cdbaecb379afd83c91620321873105e851e7ece70ec2af57c95b306b2",
+        "signature": "1ff05e6618c2c85d226134e96becc71afa1a098b9d2091a6aea1f7705cd8c738"
+      },
+      "../src/domain/epic/dtos/epic-id.dto.ts": {
+        "version": "d482a63f2cd0d2e33655cd8e45c8a417ca75ff88d13d881b720a355a063bcd6e",
+        "signature": "84fe1263ef815612354160553fde1289ea063aa8a7afd70b72ed80fa2a6550de"
+      },
+      "../src/domain/epic/dtos/update-epic.dto.ts": {
+        "version": "726b13697af0330f84421cc07304aab6077e92edf234069ae44079a20ee3071c",
+        "signature": "f3c917474f67221a54b0c4917d7445db76bcf6b601885ccf6f416bd859d657a8"
+      },
+      "../src/domain/epic/dtos/index.ts": {
+        "version": "f52bc666fe97a1f2ccded4dec27163c232be6d0d6865f1d8e78a612f72776b82",
+        "signature": "f52bc666fe97a1f2ccded4dec27163c232be6d0d6865f1d8e78a612f72776b82"
+      },
+      "../src/domain/epic/service/epic.service.ts": {
+        "version": "35c06771d27f3a5a137622ba17a44c4c8f0fe28c3838ebd719ac25a0d842249c",
+        "signature": "fc3c944c63008073f270d2897f28756b3c351d3ee8986236cb7d5c557a53b6a1"
+      },
+      "../src/domain/epic/controller/epic.controller.ts": {
+        "version": "1173b4688aac6a2038877c5b05eb5b042429d2cda3dc6d344cef68bbe28e02f9",
+        "signature": "7adb830f77415533842369e9e27d909eafb2c59b392aa4808e13525722a75792"
+      },
+      "../src/domain/epic/epic.module.ts": {
+        "version": "5ccc965e2619665b5a510d814cfb3253bc6d2c09f89a5c800aa6fbe13ca2778f",
+        "signature": "9ddd6946599f5d87b2f40d99d860833ef251c02830c8933a889ff33886847a54"
+      },
       "../src/main/app.module.ts": {
-        "version": "adf36d8da4af9593fc3cf61fc1ca102835311c81f3e69e540202cff86916d25e",
+        "version": "4a347b4b5697ee77503e864a441d6e5dcff2e8ffff858d6a1c3eb4f84452e2bd",
         "signature": "b82491e2990291580288c5602d4c017238977749d52b17391f0e45d9a29be644"
       },
       "../src/main.ts": {
@@ -3052,6 +3100,22 @@
       "../src/domain/index.ts": {
         "version": "37eb91660c9a80fb721d41b8b139e1e3d244a2dd844a033f488d38bfb6ff354b",
         "signature": "37eb91660c9a80fb721d41b8b139e1e3d244a2dd844a033f488d38bfb6ff354b"
+      },
+      "../src/domain/epic/controller/index.ts": {
+        "version": "374456fc7a27548e7a9154c3e64441eb3aa2909b18a6a410e0cf2519a585f956",
+        "signature": "374456fc7a27548e7a9154c3e64441eb3aa2909b18a6a410e0cf2519a585f956"
+      },
+      "../src/domain/epic/interfaces/iepic.interface.ts": {
+        "version": "e6ef851c497f34fe769339ee94ac0c3c7665919cc1771248c528e803e2140a8d",
+        "signature": "1a970b7139015f6bb6fdeacda3f246c52c3b1a0facf13c90d9d912767466d01e"
+      },
+      "../src/domain/epic/interfaces/index.ts": {
+        "version": "103e0220100b9e9c42856b26322460a53eea9855bb0d117eee886b6964e582cc",
+        "signature": "103e0220100b9e9c42856b26322460a53eea9855bb0d117eee886b6964e582cc"
+      },
+      "../src/domain/epic/service/index.ts": {
+        "version": "7846c6b7faa78b3ce0525af99e8f964d56b0c19def6926a3a2ac4ffc20c0f081",
+        "signature": "7846c6b7faa78b3ce0525af99e8f964d56b0c19def6926a3a2ac4ffc20c0f081"
       },
       "../src/domain/user/interfaces/iuser.interface.ts": {
         "version": "ebff7255dcdf097781f20e052d7602baf57c64d32b6aa1c300fdcf1b0e8ee799",
@@ -9548,6 +9612,111 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "../src/domain/epic/entities/epic.entity.ts": [
+        "../node_modules/typeorm/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/domain/epic/entities/index.ts": [
+        "../src/domain/epic/entities/epic.entity.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/domain/epic/repository/epic.repository.ts": [
+        "../node_modules/typeorm/index.d.ts",
+        "../src/domain/epic/entities/index.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/domain/epic/repository/index.ts": [
+        "../src/domain/epic/repository/epic.repository.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/domain/epic/dtos/create-epic.dto.ts": [
+        "../node_modules/class-validator/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/domain/epic/dtos/filter.dto.ts": [
+        "../src/domain/epic/entities/index.ts",
+        "../node_modules/class-validator/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/domain/epic/dtos/epic-id.dto.ts": [
+        "../node_modules/class-validator/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/domain/epic/dtos/update-epic.dto.ts": [
+        "../src/domain/epic/entities/index.ts",
+        "../node_modules/class-validator/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/domain/epic/dtos/index.ts": [
+        "../src/domain/epic/dtos/create-epic.dto.ts",
+        "../src/domain/epic/dtos/filter.dto.ts",
+        "../src/domain/epic/dtos/epic-id.dto.ts",
+        "../src/domain/epic/dtos/update-epic.dto.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/domain/epic/service/epic.service.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/typeorm/index.d.ts",
+        "../src/domain/epic/repository/index.ts",
+        "../src/domain/epic/entities/epic.entity.ts",
+        "../src/domain/epic/dtos/index.ts",
+        "../node_modules/typeorm/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/domain/epic/controller/epic.controller.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/domain/epic/service/epic.service.ts",
+        "../src/domain/epic/dtos/create-epic.dto.ts",
+        "../node_modules/class-transformer/index.d.ts",
+        "../src/domain/epic/entities/index.ts",
+        "../src/domain/epic/dtos/index.ts",
+        "../node_modules/typeorm/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/domain/epic/epic.module.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/domain/epic/controller/epic.controller.ts",
+        "../src/domain/epic/service/epic.service.ts",
+        "../node_modules/@nestjs/typeorm/index.d.ts",
+        "../src/domain/epic/repository/epic.repository.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "../src/main/app.module.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../src/main/controller/index.ts",
@@ -9559,6 +9728,7 @@
         "../src/domain/user/user.module.ts",
         "../src/common/index.ts",
         "../node_modules/@nestjs/core/index.d.ts",
+        "../src/domain/epic/epic.module.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -9589,6 +9759,36 @@
       ],
       "../src/domain/index.ts": [
         "../src/domain/user/index.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/domain/epic/controller/index.ts": [
+        "../src/domain/epic/controller/epic.controller.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/domain/epic/interfaces/iepic.interface.ts": [
+        "../src/domain/epic/entities/index.ts",
+        "../src/domain/epic/dtos/index.ts",
+        "../node_modules/typeorm/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/domain/epic/interfaces/index.ts": [
+        "../src/domain/epic/interfaces/iepic.interface.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/domain/epic/service/index.ts": [
+        "../src/domain/epic/service/epic.service.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -15969,12 +16169,64 @@
       "../src/domain/user/strategy/index.ts": [
         "../src/domain/user/strategy/jwt-strategy.ts"
       ],
+      "../src/domain/epic/entities/epic.entity.ts": [
+        "../node_modules/typeorm/index.d.ts"
+      ],
+      "../src/domain/epic/entities/index.ts": [
+        "../src/domain/epic/entities/epic.entity.ts"
+      ],
+      "../src/domain/epic/repository/epic.repository.ts": [
+        "../src/domain/epic/entities/index.ts",
+        "../node_modules/typeorm/index.d.ts"
+      ],
+      "../src/domain/epic/repository/index.ts": [
+        "../src/domain/epic/repository/epic.repository.ts"
+      ],
+      "../src/domain/epic/dtos/filter.dto.ts": [
+        "../src/domain/epic/entities/index.ts"
+      ],
+      "../src/domain/epic/dtos/update-epic.dto.ts": [
+        "../src/domain/epic/entities/index.ts"
+      ],
+      "../src/domain/epic/dtos/index.ts": [
+        "../src/domain/epic/dtos/create-epic.dto.ts",
+        "../src/domain/epic/dtos/filter.dto.ts",
+        "../src/domain/epic/dtos/epic-id.dto.ts",
+        "../src/domain/epic/dtos/update-epic.dto.ts"
+      ],
+      "../src/domain/epic/service/epic.service.ts": [
+        "../src/domain/epic/repository/index.ts",
+        "../src/domain/epic/entities/epic.entity.ts",
+        "../src/domain/epic/dtos/index.ts",
+        "../node_modules/typeorm/index.d.ts"
+      ],
+      "../src/domain/epic/controller/epic.controller.ts": [
+        "../src/domain/epic/service/epic.service.ts",
+        "../src/domain/epic/dtos/create-epic.dto.ts",
+        "../src/domain/epic/entities/index.ts",
+        "../src/domain/epic/dtos/index.ts",
+        "../node_modules/typeorm/index.d.ts"
+      ],
       "../src/domain/user/index.ts": [
         "../src/domain/user/user.module.ts",
         "../src/domain/user/entities/index.ts"
       ],
       "../src/domain/index.ts": [
         "../src/domain/user/index.ts"
+      ],
+      "../src/domain/epic/controller/index.ts": [
+        "../src/domain/epic/controller/epic.controller.ts"
+      ],
+      "../src/domain/epic/interfaces/iepic.interface.ts": [
+        "../src/domain/epic/entities/index.ts",
+        "../src/domain/epic/dtos/index.ts",
+        "../node_modules/typeorm/index.d.ts"
+      ],
+      "../src/domain/epic/interfaces/index.ts": [
+        "../src/domain/epic/interfaces/iepic.interface.ts"
+      ],
+      "../src/domain/epic/service/index.ts": [
+        "../src/domain/epic/service/epic.service.ts"
       ],
       "../src/domain/user/interfaces/iuser.interface.ts": [
         "../src/domain/user/entities/index.ts"
@@ -16924,6 +17176,7 @@
       "../src/common/guards/auth.guard.ts",
       "../src/common/guards/index.ts",
       "../src/common/index.ts",
+      "../src/domain/user/controller/user.controller.ts",
       "../src/domain/user/controller/index.ts",
       "../node_modules/@nestjs/passport/dist/abstract.strategy.d.ts",
       "../node_modules/@nestjs/passport/dist/interfaces/auth-module.options.d.ts",
@@ -16938,6 +17191,13 @@
       "../src/domain/user/strategy/jwt-strategy.ts",
       "../src/domain/user/strategy/index.ts",
       "../src/domain/user/user.module.ts",
+      "../src/domain/epic/entities/epic.entity.ts",
+      "../src/domain/epic/entities/index.ts",
+      "../src/domain/epic/repository/epic.repository.ts",
+      "../src/domain/epic/repository/index.ts",
+      "../src/domain/epic/dtos/create-epic.dto.ts",
+      "../src/domain/epic/dtos/epic-id.dto.ts",
+      "../src/domain/epic/dtos/update-epic.dto.ts",
       "../src/main/app.module.ts",
       "../src/main.ts",
       "../src/common/decorators/role-user.decorator.ts",
@@ -16973,7 +17233,15 @@
       "../node_modules/@types/webpack/index.d.ts",
       "../node_modules/@types/yargs-parser/index.d.ts",
       "../node_modules/@types/yargs/index.d.ts",
-      "../src/domain/user/controller/user.controller.ts"
+      "../src/domain/epic/dtos/filter.dto.ts",
+      "../src/domain/epic/dtos/index.ts",
+      "../src/domain/epic/service/epic.service.ts",
+      "../src/domain/epic/controller/epic.controller.ts",
+      "../src/domain/epic/epic.module.ts",
+      "../src/domain/epic/controller/index.ts",
+      "../src/domain/epic/interfaces/iepic.interface.ts",
+      "../src/domain/epic/interfaces/index.ts",
+      "../src/domain/epic/service/index.ts"
     ]
   },
   "version": "3.8.3"
