@@ -8,6 +8,7 @@ import { typeOrmConfig } from '../config/typeorm.config';
 import { UserModule } from '../domain/user/user.module';
 import { HttpExceptionFilter, LoggingInterceptor, ErrorInterceptor } from '../common';
 import {APP_FILTER, APP_INTERCEPTOR} from '@nestjs/core';
+import { EpicModule } from '../domain/epic/epic.module';
 
 const providers = [
   {
@@ -28,6 +29,7 @@ const providers = [
   imports: [
     TypeOrmModule.forRoot(typeOrmConfig),
     UserModule,
+    EpicModule,
   ],
   controllers: [AppController],
   providers: [

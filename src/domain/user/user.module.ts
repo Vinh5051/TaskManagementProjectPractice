@@ -21,11 +21,11 @@ import { JwtStrategy } from './strategy';
   controllers: [UserController],
   providers: [
     UserService,
-    //JwtStrategy,
+    // JwtStrategy,
   ],
   exports: [
-    //JwtStrategy,
-    //PassportModule,
+    // JwtStrategy,
+    // PassportModule,
   ],
 })
 export class UserModule {}
