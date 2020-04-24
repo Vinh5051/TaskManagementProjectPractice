@@ -11,17 +11,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const entities_1 = require("../entities");
 const class_validator_1 = require("class-validator");
-class FilterDto {
+class FilterQueryDto {
 }
 __decorate([
     class_validator_1.IsOptional(),
     class_validator_1.IsIn([entities_1.EpicStatus.TODO, entities_1.EpicStatus.IN_PROGRESS, entities_1.EpicStatus.DONE, entities_1.EpicStatus.BUG]),
     __metadata("design:type", String)
-], FilterDto.prototype, "status", void 0);
+], FilterQueryDto.prototype, "status", void 0);
 __decorate([
     class_validator_1.IsOptional(),
     class_validator_1.IsString(),
     __metadata("design:type", String)
-], FilterDto.prototype, "search", void 0);
-exports.FilterDto = FilterDto;
+], FilterQueryDto.prototype, "search", void 0);
+exports.FilterQueryDto = FilterQueryDto;
 //# sourceMappingURL=filter.dto.js.map

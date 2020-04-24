@@ -1,3 +1,3 @@
-export declare class EpicIdDto {
+export declare class EpicParamIdDto {
     id: string;
 }

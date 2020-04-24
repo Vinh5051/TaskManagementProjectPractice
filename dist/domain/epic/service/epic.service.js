@@ -19,23 +19,24 @@ let EpicService = class EpicService {
     constructor(epicRepsitory) {
         this.epicRepsitory = epicRepsitory;
     }
-    async createEpic(epic) {
-        return this.epicRepsitory.createEpic(epic);
+    async createEpic(authId, epic) {
+        epic.idauth = authId;
+        return await this.epicRepsitory.createEpic(epic);
     }
-    async getEpic(filterDto) {
-        const { status, search } = filterDto;
-        return this.epicRepsitory.getEpic(status, search);
+    async getEpic(filterQueryDto) {
+        const { status, search } = filterQueryDto;
+        return await this.epicRepsitory.getEpic(status, search);
     }
-    async getEpicById(epicIdDto) {
-        const id = epicIdDto.id;
+    async getEpicById(epicParamIdDto) {
+        const id = epicParamIdDto.id;
         return await this.epicRepsitory.getEpicById(id);
     }
-    async updateEpicStatus(updateEpicDto) {
-        const { id, status } = updateEpicDto;
+    async updateEpicStatus(updateEpicQueryDto) {
+        const { id, status } = updateEpicQueryDto;
         return await this.epicRepsitory.updateStatus(id, status);
     }
-    async deleteEpic(epicIdDto) {
-        const id = epicIdDto.id;
+    async deleteEpic(epicParamIdDto) {
+        const id = epicParamIdDto.id;
         return await this.epicRepsitory.deleteEpic(id);
     }
 };

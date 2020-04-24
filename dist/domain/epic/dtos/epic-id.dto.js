@@ -10,12 +10,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const class_validator_1 = require("class-validator");
-class EpicIdDto {
+class EpicParamIdDto {
 }
 __decorate([
     class_validator_1.IsOptional(),
     class_validator_1.IsString(),
     __metadata("design:type", String)
-], EpicIdDto.prototype, "id", void 0);
-exports.EpicIdDto = EpicIdDto;
+], EpicParamIdDto.prototype, "id", void 0);
+exports.EpicParamIdDto = EpicParamIdDto;
 //# sourceMappingURL=epic-id.dto.js.map

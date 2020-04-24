@@ -1,7 +1,7 @@
 import {EpicStatus} from '../entities';
 import {IsOptional, IsIn, IsString, IsNotEmpty} from 'class-validator';
 
-export class FilterDto {
+export class FilterQueryDto {
     @IsOptional()
     @IsIn([EpicStatus.TODO, EpicStatus.IN_PROGRESS, EpicStatus.DONE, EpicStatus.BUG])
     status: EpicStatus;

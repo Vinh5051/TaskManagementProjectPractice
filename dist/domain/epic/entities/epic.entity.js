@@ -10,6 +10,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const typeorm_1 = require("typeorm");
+const user_1 = require("../../user");
 var EpicStatus;
 (function (EpicStatus) {
     EpicStatus["TODO"] = "TO DO";
@@ -39,6 +40,10 @@ __decorate([
     typeorm_1.Column({ default: EpicStatus.TODO }),
     __metadata("design:type", String)
 ], Epic.prototype, "status", void 0);
+__decorate([
+    typeorm_1.ManyToOne(type => user_1.User),
+    __metadata("design:type", String)
+], Epic.prototype, "idauth", void 0);
 __decorate([
     typeorm_1.CreateDateColumn({ type: 'timestamp' }),
     __metadata("design:type", Date)

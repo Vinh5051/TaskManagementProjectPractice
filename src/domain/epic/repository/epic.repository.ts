@@ -10,7 +10,7 @@ export class EpicRepository extends Repository<Epic> {
     async getEpic(status, search): Promise<Epic[]> {
         const query = this.createQueryBuilder('epic');
         if (status) {
-            query.orWhere('epic.status LIKE :status', {status});
+            query.orWhere('epic.status = :status', {status});
         }
 
         if (search) {

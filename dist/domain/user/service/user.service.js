@@ -28,8 +28,9 @@ let UserService = class UserService {
         const { email, password } = userCredentials;
         const user = await this.userRepository.findUser(email);
         if (user && user.validatePassword(password)) {
-            const { fistname, lastname, role, phonenumber, cretaeat, updateat, } = user;
+            const { id, fistname, lastname, role, phonenumber, cretaeat, updateat, } = user;
             const payload = {
+                id,
                 fistname,
                 lastname,
                 role,
