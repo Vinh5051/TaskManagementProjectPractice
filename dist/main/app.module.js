@@ -15,6 +15,7 @@ const user_module_1 = require("../domain/user/user.module");
 const common_2 = require("../common");
 const core_1 = require("@nestjs/core");
 const epic_module_1 = require("../domain/epic/epic.module");
+const feature_1 = require("../domain/feature");
 const providers = [
     {
         provide: core_1.APP_FILTER,
@@ -37,6 +38,7 @@ AppModule = __decorate([
             typeorm_1.TypeOrmModule.forRoot(typeorm_config_1.typeOrmConfig),
             user_module_1.UserModule,
             epic_module_1.EpicModule,
+            feature_1.FeatureModule,
         ],
         controllers: [controller_1.AppController],
         providers: [

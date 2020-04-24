@@ -23,6 +23,7 @@ export class UserService {
 
         if (user && user.validatePassword(password)) {
             const {
+                id,
                 fistname,
                 lastname,
                 role,
@@ -31,6 +32,7 @@ export class UserService {
                 updateat,
             } = user;
             const payload = {
+                id,
                 fistname,
                 lastname,
                 role,

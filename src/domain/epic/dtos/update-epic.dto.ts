@@ -1,7 +1,7 @@
 import {EpicStatus} from '../entities';
 import { IsOptional, IsString, IsEnum, IsIn } from 'class-validator';
 
-export class UpdateEpicDto {
+export class UpdateEpicQueryDto {
     @IsOptional()
     @IsString()
     id: string;

@@ -1,4 +1,6 @@
-import { BaseEntity, Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, UpdateDateColumn, BeforeInsert } from 'typeorm';
+import { BaseEntity, Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, UpdateDateColumn, BeforeInsert, ManyToOne } from 'typeorm';
+import {type} from 'os';
+import { User } from 'src/domain/user';
 
 export enum EpicStatus {
     TODO = 'TO DO',
@@ -23,6 +25,9 @@ export class Epic extends BaseEntity {
 
     @Column({ default: EpicStatus.TODO})
     status: EpicStatus;
+
+    @ManyToOne(type => User)
+    idauth: string;
 
     @CreateDateColumn({ type: 'timestamp'})
     public createat: Date;

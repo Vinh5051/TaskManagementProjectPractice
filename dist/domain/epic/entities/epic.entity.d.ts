@@ -11,6 +11,7 @@ export declare class Epic extends BaseEntity {
     title: string;
     description: string;
     status: EpicStatus;
+    idauth: string;
     createat: Date;
     updateat: Date;
 }

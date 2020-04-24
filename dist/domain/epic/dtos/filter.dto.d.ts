@@ -1,5 +1,5 @@
 import { EpicStatus } from '../entities';
-export declare class FilterDto {
+export declare class FilterQueryDto {
     status: EpicStatus;
     search: string;
 }

@@ -18,59 +18,62 @@ const create_epic_dto_1 = require("../dtos/create-epic.dto");
 const class_transformer_1 = require("class-transformer");
 const entities_1 = require("../entities");
 const dtos_1 = require("../dtos");
+const common_2 = require("../../../common");
+const user_1 = require("../../user");
 let EpicController = class EpicController {
     constructor(epicService) {
         this.epicService = epicService;
     }
-    async createEpic(createEpicDto) {
-        return this.epicService.createEpic(class_transformer_1.plainToClass(entities_1.Epic, createEpicDto));
+    async createEpic(user, createEpicDto) {
+        return this.epicService.createEpic(user.id, class_transformer_1.plainToClass(entities_1.Epic, createEpicDto));
     }
-    async getEpic(filterDto) {
-        return await this.epicService.getEpic(filterDto);
+    async getEpic(filterQueryDto) {
+        return await this.epicService.getEpic(filterQueryDto);
     }
-    async getEpicById(epicIdDto) {
-        return await this.epicService.getEpicById(epicIdDto);
+    async getEpicById(epicParamIdDto) {
+        return await this.epicService.getEpicById(epicParamIdDto);
     }
-    async updateStatus(updateEpicDto) {
-        return await this.epicService.updateEpicStatus(updateEpicDto);
+    async updateStatus(updateEpicQueryDto) {
+        return await this.epicService.updateEpicStatus(updateEpicQueryDto);
     }
-    async deleteEpic(epicIdDto) {
-        return await this.epicService.deleteEpic(epicIdDto);
+    async deleteEpic(epicParamIdDto) {
+        return await this.epicService.deleteEpic(epicParamIdDto);
     }
 };
 __decorate([
     common_1.Post('/create'),
-    __param(0, common_1.Body()),
+    common_1.UseGuards(common_2.AuthGuard),
+    __param(0, common_2.jwt()), __param(1, common_1.Body()),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [create_epic_dto_1.CreateEpicDto]),
+    __metadata("design:paramtypes", [user_1.User, create_epic_dto_1.CreateEpicDto]),
     __metadata("design:returntype", Promise)
 ], EpicController.prototype, "createEpic", null);
 __decorate([
     common_1.Get('/'),
     __param(0, common_1.Query()),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [dtos_1.FilterDto]),
+    __metadata("design:paramtypes", [dtos_1.FilterQueryDto]),
     __metadata("design:returntype", Promise)
 ], EpicController.prototype, "getEpic", null);
 __decorate([
     common_1.Post('/'),
-    __param(0, common_1.Query()),
+    __param(0, common_1.Param()),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [dtos_1.EpicIdDto]),
+    __metadata("design:paramtypes", [dtos_1.EpicParamIdDto]),
     __metadata("design:returntype", Promise)
 ], EpicController.prototype, "getEpicById", null);
 __decorate([
     common_1.Patch('/updatestatus/'),
     __param(0, common_1.Query()),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [dtos_1.UpdateEpicDto]),
+    __metadata("design:paramtypes", [dtos_1.UpdateEpicQueryDto]),
     __metadata("design:returntype", Promise)
 ], EpicController.prototype, "updateStatus", null);
 __decorate([
-    common_1.Delete('/delete/'),
-    __param(0, common_1.Query()),
+    common_1.Delete('/'),
+    __param(0, common_1.Param()),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [dtos_1.EpicIdDto]),
+    __metadata("design:paramtypes", [dtos_1.EpicParamIdDto]),
     __metadata("design:returntype", Promise)
 ], EpicController.prototype, "deleteEpic", null);
 EpicController = __decorate([

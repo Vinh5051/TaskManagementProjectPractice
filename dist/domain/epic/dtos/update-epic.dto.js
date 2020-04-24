@@ -11,16 +11,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const entities_1 = require("../entities");
 const class_validator_1 = require("class-validator");
-class UpdateEpicDto {
+class UpdateEpicQueryDto {
 }
 __decorate([
     class_validator_1.IsOptional(),
     class_validator_1.IsString(),
     __metadata("design:type", String)
-], UpdateEpicDto.prototype, "id", void 0);
+], UpdateEpicQueryDto.prototype, "id", void 0);
 __decorate([
     class_validator_1.IsIn([entities_1.EpicStatus.TODO, entities_1.EpicStatus.IN_PROGRESS, entities_1.EpicStatus.DONE, entities_1.EpicStatus.BUG]),
     __metadata("design:type", String)
-], UpdateEpicDto.prototype, "status", void 0);
-exports.UpdateEpicDto = UpdateEpicDto;
+], UpdateEpicQueryDto.prototype, "status", void 0);
+exports.UpdateEpicQueryDto = UpdateEpicQueryDto;
 //# sourceMappingURL=update-epic.dto.js.map
