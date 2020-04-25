@@ -1,4 +1,5 @@
 import { BaseEntity } from 'typeorm';
+import { User } from 'src/domain/user';
 export declare enum EpicStatus {
     TODO = "TO DO",
     IN_PROGRESS = "IN PROGRESS",
@@ -11,7 +12,7 @@ export declare class Epic extends BaseEntity {
     title: string;
     description: string;
     status: EpicStatus;
-    idauth: string;
+    idauth: User;
     createat: Date;
     updateat: Date;
 }

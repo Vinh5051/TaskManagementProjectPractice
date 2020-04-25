@@ -27,7 +27,7 @@ export class Epic extends BaseEntity {
     status: EpicStatus;
 
     @ManyToOne(type => User)
-    idauth: string;
+    idauth: User;
 
     @CreateDateColumn({ type: 'timestamp'})
     public createat: Date;

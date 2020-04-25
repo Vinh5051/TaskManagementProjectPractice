@@ -11,11 +11,12 @@ const feature_controller_1 = require("./controller/feature.controller");
 const feature_service_1 = require("./service/feature.service");
 const typeorm_1 = require("@nestjs/typeorm");
 const repository_1 = require("./repository");
+const repository_2 = require("../epic/repository");
 let FeatureModule = class FeatureModule {
 };
 FeatureModule = __decorate([
     common_1.Module({
-        imports: [typeorm_1.TypeOrmModule.forFeature([repository_1.FeatureRepository])],
+        imports: [typeorm_1.TypeOrmModule.forFeature([repository_1.FeatureRepository, repository_2.EpicRepository])],
         controllers: [feature_controller_1.FeatureController],
         providers: [feature_service_1.FeatureService],
     })

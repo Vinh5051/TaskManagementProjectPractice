@@ -25,7 +25,7 @@ let EpicController = class EpicController {
         this.epicService = epicService;
     }
     async createEpic(user, createEpicDto) {
-        return this.epicService.createEpic(user.id, class_transformer_1.plainToClass(entities_1.Epic, createEpicDto));
+        return this.epicService.createEpic(user, class_transformer_1.plainToClass(entities_1.Epic, createEpicDto));
     }
     async getEpic(filterQueryDto) {
         return await this.epicService.getEpic(filterQueryDto);
@@ -63,7 +63,7 @@ __decorate([
     __metadata("design:returntype", Promise)
 ], EpicController.prototype, "getEpicById", null);
 __decorate([
-    common_1.Patch('/updatestatus/'),
+    common_1.Put('/updatestatus/'),
     __param(0, common_1.Query()),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [dtos_1.UpdateEpicQueryDto]),

@@ -12,13 +12,13 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const typeorm_1 = require("typeorm");
 const user_1 = require("../../user");
 const entities_1 = require("../../epic/entities");
-var featureSatsus;
-(function (featureSatsus) {
-    featureSatsus["TODO"] = "TO DO";
-    featureSatsus["IN_PROGRESS"] = "IN PROGRESS";
-    featureSatsus["DONE"] = "DONE";
-    featureSatsus["BUG"] = "BUG";
-})(featureSatsus = exports.featureSatsus || (exports.featureSatsus = {}));
+var FeatureSatsus;
+(function (FeatureSatsus) {
+    FeatureSatsus["TODO"] = "TO DO";
+    FeatureSatsus["IN_PROGRESS"] = "IN PROGRESS";
+    FeatureSatsus["DONE"] = "DONE";
+    FeatureSatsus["BUG"] = "BUG";
+})(FeatureSatsus = exports.FeatureSatsus || (exports.FeatureSatsus = {}));
 let Feature = class Feature extends typeorm_1.BaseEntity {
 };
 __decorate([
@@ -38,17 +38,29 @@ __decorate([
     __metadata("design:type", Number)
 ], Feature.prototype, "priority", void 0);
 __decorate([
-    typeorm_1.Column({ default: featureSatsus.TODO }),
+    typeorm_1.Column({ default: FeatureSatsus.TODO }),
     __metadata("design:type", String)
 ], Feature.prototype, "status", void 0);
 __decorate([
     typeorm_1.ManyToOne(type => user_1.User),
     __metadata("design:type", user_1.User)
-], Feature.prototype, "iduser", void 0);
+], Feature.prototype, "auth", void 0);
+__decorate([
+    typeorm_1.ManyToOne(type => user_1.User),
+    __metadata("design:type", user_1.User)
+], Feature.prototype, "user", void 0);
 __decorate([
     typeorm_1.ManyToOne(type => entities_1.Epic),
     __metadata("design:type", entities_1.Epic)
-], Feature.prototype, "idepic", void 0);
+], Feature.prototype, "epic", void 0);
+__decorate([
+    typeorm_1.CreateDateColumn({ type: 'timestamp' }),
+    __metadata("design:type", Date)
+], Feature.prototype, "createat", void 0);
+__decorate([
+    typeorm_1.UpdateDateColumn({ type: 'timestamp' }),
+    __metadata("design:type", Date)
+], Feature.prototype, "updateat", void 0);
 Feature = __decorate([
     typeorm_1.Entity()
 ], Feature);

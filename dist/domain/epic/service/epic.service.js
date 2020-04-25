@@ -15,12 +15,13 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const common_1 = require("@nestjs/common");
 const typeorm_1 = require("@nestjs/typeorm");
 const repository_1 = require("../repository");
+const user_1 = require("../../user");
 let EpicService = class EpicService {
     constructor(epicRepsitory) {
         this.epicRepsitory = epicRepsitory;
     }
-    async createEpic(authId, epic) {
-        epic.idauth = authId;
+    async createEpic(user, epic) {
+        epic.idauth = user;
         return await this.epicRepsitory.createEpic(epic);
     }
     async getEpic(filterQueryDto) {

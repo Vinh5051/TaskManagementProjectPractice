@@ -1,8 +1,9 @@
-import {Entity, BaseEntity, ManyToOne, PrimaryGeneratedColumn, Column} from 'typeorm';
+import {Entity, BaseEntity, ManyToOne, PrimaryGeneratedColumn, Column, CreateDateColumn, UpdateDateColumn} from 'typeorm';
 import {User} from 'src/domain/user';
 import {Epic} from 'src/domain/epic/entities';
+import { type } from 'os';
 
-export enum featureSatsus {
+export enum FeatureSatsus {
     TODO = 'TO DO',
     IN_PROGRESS = 'IN PROGRESS',
     DONE = 'DONE',
@@ -23,12 +24,21 @@ export class Feature extends BaseEntity {
     @Column({default: 0})
     priority: number;
 
-    @Column({ default: featureSatsus.TODO })
-    status: featureSatsus;
+    @Column({ default: FeatureSatsus.TODO })
+    status: FeatureSatsus;
 
     @ManyToOne(type => User)
-    iduser: User;
+    auth: User;
+
+    @ManyToOne(type => User)
+    user: User;
 
     @ManyToOne(type => Epic)
-    idepic: Epic;
+    epic: Epic;
+
+    @CreateDateColumn({type: 'timestamp'})
+    createat: Date;
+
+    @UpdateDateColumn({type: 'timestamp'})
+    updateat: Date;
 }

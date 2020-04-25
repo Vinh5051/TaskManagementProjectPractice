@@ -4,6 +4,7 @@ import { EpicRepository } from '../repository';
 import { Epic, EpicStatus } from '../entities/epic.entity';
 import {FilterQueryDto, EpicParamIdDto, UpdateEpicQueryDto} from '../dtos';
 import {DeleteResult, UpdateResult} from 'typeorm';
+import {User} from 'src/domain/user';
 
 @Injectable()
 export class EpicService {
@@ -12,8 +13,8 @@ export class EpicService {
         private readonly epicRepsitory: EpicRepository,
     ) {}
 
-    async createEpic(authId: string, epic: Epic): Promise<Epic> {
-        epic.idauth = authId;
+    async createEpic(user: User, epic: Epic): Promise<Epic> {
+        epic.idauth = user;
         return await this.epicRepsitory.createEpic(epic);
     }
 
