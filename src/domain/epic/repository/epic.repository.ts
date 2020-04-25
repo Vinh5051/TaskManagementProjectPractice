@@ -7,14 +7,14 @@ export class EpicRepository extends Repository<Epic> {
         return this.save(epic);
     }
 
-    async getEpic(status, search): Promise<Epic[]> {
+    async getEpic(status: EpicStatus, search: string): Promise<Epic[]> {
         const query = this.createQueryBuilder('epic');
         if (status) {
-            query.orWhere('epic.status = :status', {status});
+            query.andWhere('epic.status = :status', {status});
         }
 
         if (search) {
-            query.orWhere('epic.nameproject LIKE :search OR epic.title LIKE :search OR epic.description LIKE :search', {search: `%${search}%`});
+            query.andWhere('epic.nameproject LIKE :search OR epic.title LIKE :search OR epic.description LIKE :search', {search: `%${search}%`});
         }
         return await query.getMany();
     }

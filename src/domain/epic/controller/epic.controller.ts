@@ -1,4 +1,4 @@
-import { Controller, Post, Get, Body, Query, Param, Patch, Delete, UseGuards } from '@nestjs/common';
+import { Controller, Post, Get, Body, Query, Param, Patch, Delete, UseGuards, Put } from '@nestjs/common';
 import { EpicService } from '../service/epic.service';
 import { CreateEpicDto } from '../dtos/create-epic.dto';
 import { plainToClass } from 'class-transformer';
@@ -15,7 +15,7 @@ export class EpicController {
     @Post('/create')
     @UseGuards(AuthGuard)
     async createEpic(@jwt() user: User , @Body() createEpicDto: CreateEpicDto): Promise<Epic> {
-        return this.epicService.createEpic(user.id, plainToClass(Epic, createEpicDto));
+        return this.epicService.createEpic(user, plainToClass(Epic, createEpicDto));
     }
 
     @Get('/')
@@ -28,7 +28,7 @@ export class EpicController {
         return await this.epicService.getEpicById(epicParamIdDto);
     }
 
-    @Patch('/updatestatus/')
+    @Put('/updatestatus/')
     async updateStatus(@Query() updateEpicQueryDto: UpdateEpicQueryDto): Promise<UpdateResult> {
         return await this.epicService.updateEpicStatus( updateEpicQueryDto);
     }

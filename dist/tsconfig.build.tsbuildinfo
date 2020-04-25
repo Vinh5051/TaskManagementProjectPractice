@@ -2450,7 +2450,7 @@
         "signature": "1c5790c1ce487913186e997aa3c813adf32e1b63ddf1374528ef14d4fc2850f4"
       },
       "../src/domain/user/repository/user.repository.ts": {
-        "version": "d75eddc2f3a06a9cefc4b5e62ab0d3389eae7d242814b5ddc867b1a9eccf85d6",
+        "version": "6109a899e3955f699eaa97eed2f8de058dd95e955a318eb025a2cbbf81ec5946",
         "signature": "abfe0764fdf7b3af8393ec6a45eb7ed909fc72ea0b8f1fc79e5313f92384fd06"
       },
       "../src/domain/user/repository/index.ts": {
@@ -3038,16 +3038,16 @@
         "signature": "53a830ea5d23cdf31cce398bdad5b47fe4b53ea19eb36ec681089e2c9a6740b4"
       },
       "../src/domain/epic/entities/epic.entity.ts": {
-        "version": "6d29f0e1c5ba6e4cca2bfae1355a48f328a06ec0dcef8ad6627f9371cb0cc62d",
-        "signature": "b04e893962c2181f86f537efe0a0407ed51db8758739c7fd24cff9f9942d8fb4"
+        "version": "7f6a1b0677998ff520e8616035ab3b26bd8d526a3e11160eca2e09b0c8192083",
+        "signature": "9d5938d3d0b2dfad2e08211e2d11ef157c7a90c0b8be60d23f72615678884f4b"
       },
       "../src/domain/epic/entities/index.ts": {
         "version": "9f9c81124f28628ed151b4903453dfe7a4ebfa74025bbb6589fb9d146e54111b",
         "signature": "9f9c81124f28628ed151b4903453dfe7a4ebfa74025bbb6589fb9d146e54111b"
       },
       "../src/domain/epic/repository/epic.repository.ts": {
-        "version": "fc109af632b214247f1b3939d650bf792e463e8b29c33badcb3bb1aa4e607650",
-        "signature": "13064578c621b94544f3223776cf9142db5e477984a074ed6896da6fb038ae54"
+        "version": "6bf02092bf4d0bf5d17b2b8cb4f6ed216a74ef9fb07f63e8a96dcb342aef849f",
+        "signature": "4e8b0cc1338fa8c1a5e2c13629c3e3cdc82884d450ca378650c9bc0eb0afe0f4"
       },
       "../src/domain/epic/repository/index.ts": {
         "version": "17c49c79fc327e96a4ec9ea16978277e51c6008cd34b9866308e364670f7abc1",
@@ -3074,43 +3074,79 @@
         "signature": "f52bc666fe97a1f2ccded4dec27163c232be6d0d6865f1d8e78a612f72776b82"
       },
       "../src/domain/epic/service/epic.service.ts": {
-        "version": "4c3b7d33fbd6098b03f6bb3059b75a1d846b692aa70f9a5639b40c6dac2990c5",
-        "signature": "c7593d329849aed73aa8814051fe1534dc630a0d9eeb3850a750f0420953e063"
+        "version": "ba9d6eebf05a93053fb1000cfe261a861d7521d563bfa62b626a0e9e4af6fdcb",
+        "signature": "d243474d458e9a587c38add7377a4a1a59ffc96480a8683b19f707c262cde302"
       },
       "../src/domain/epic/controller/epic.controller.ts": {
-        "version": "c7d576f8daf7f8e2f0e93c409af06eb72e2cacb007b5ab68982e9cd233459e72",
+        "version": "9a0ad7bacc09de47d6ecc3d432a99a7acbeaa29f92c62d25b042afbd2b876274",
         "signature": "bd97b9bb7f8cd7f98245867a0eff269cf24df824347df6c0ed756a877f5f143f"
       },
       "../src/domain/epic/epic.module.ts": {
         "version": "5ccc965e2619665b5a510d814cfb3253bc6d2c09f89a5c800aa6fbe13ca2778f",
         "signature": "9ddd6946599f5d87b2f40d99d860833ef251c02830c8933a889ff33886847a54"
       },
-      "../src/domain/feature/controller/feature.controller.ts": {
-        "version": "8483f3fdf71653bf2f412f08317c415d48789ddd49b9b2e782e04114f167b96c",
-        "signature": "fc37ea888701a93d5be01ee5915dd2d0c809ae9aa21eb1de161aa80391d529be"
-      },
-      "../src/domain/feature/service/feature.service.ts": {
-        "version": "5d020c1caaa3faa3d688908f54d8454624ddae2e33a8df1a413a31ed856960ae",
-        "signature": "74961de811918e8dfe9268c436f3fcae74f8c04f0f15f7ca842399c17756ce5e"
-      },
       "../src/domain/feature/entities/feature.entity.ts": {
-        "version": "372e11ca725e6f7103bb61047d7df2a3bd10f7a1644b6e6ff7e5b8c7cb4c6fb3",
-        "signature": "dd583902616c3eef224e735cd1df755995685527c3374304f62c355c26758415"
+        "version": "616c7aac44230e2307f21db379d5b5e13fef4f9ae5e48f23bf1e38070186f2c8",
+        "signature": "4925f80d8342bcc0b514c17771821bbd75f05fbc1bcdb6b56b1fbef2ee656dc6"
       },
       "../src/domain/feature/entities/index.ts": {
         "version": "92913153256b27396722be60eda1a9b412b5e6dea5a4f134edd6e218f509de24",
         "signature": "92913153256b27396722be60eda1a9b412b5e6dea5a4f134edd6e218f509de24"
       },
       "../src/domain/feature/repository/feature.repository.ts": {
-        "version": "c2257d5d1c0861b6bb3dbe57f3f9fd54e565cd850fca7b706c37f115074fa88f",
-        "signature": "6d3221a8a3930b2e46990bb999ae32b6bd2773f2264172843fbe28a8d3a3300b"
+        "version": "0fd14eb011dd3d995eef04ee4afefa180800623308bfd408d9aa579936be365d",
+        "signature": "3496bca4cc8012b61a13b037b0466104489399430e998b0af02f5b155ddb19fc"
       },
       "../src/domain/feature/repository/index.ts": {
         "version": "4fb007a5c5e2559673cb5984c62e4eb716281c2dbac2d70aabfff66f9bd594e9",
         "signature": "4fb007a5c5e2559673cb5984c62e4eb716281c2dbac2d70aabfff66f9bd594e9"
       },
+      "../src/domain/feature/dto/create-feature.dto.ts": {
+        "version": "38603b829f9bf7fd1d8352cdcf85462e149d24f400a16b6d0142d2d775933a78",
+        "signature": "cd86786229895999298a94e4a4fab1c3ff40236bea2fdc685535af0515f9a069"
+      },
+      "../src/domain/feature/dto/filterquery.dto.ts": {
+        "version": "7e4f76bf12b2e7d8760e82924a07d9027c83f309f34101a81e06f6a8c9af6e7a",
+        "signature": "66b970b2cdab4563ae4160299239575aa071e78be9751b12397820217e409498"
+      },
+      "../src/domain/feature/dto/feature-param-id.dtp.ts": {
+        "version": "12f5294c201fb1dff6a2538adfa58f49101124e3623f0cb095d19f4f8526d58f",
+        "signature": "716e255f93d46dfa0e2684b2f9398ca6f7aa1cc19de1ff172f909dc5c64b3942"
+      },
+      "../src/domain/feature/dto/update-status-query.dto.ts": {
+        "version": "26dbdf66f4c25618a16c2d733b97f2a364644fe1195d978e3aaadcf507690e77",
+        "signature": "47bfa42f7b3e312ab0bd5914a44037ee938c8733020681a48aa0d1dccc335d6d"
+      },
+      "../src/domain/feature/interfaces/ifeature.interface.ts": {
+        "version": "49254879ff2f6a2a58f8a9fdf7e1f7cf40065bea0507148d30f9c4efee9cc3be",
+        "signature": "4bcdd939501fa459963ccbf2b57cc9e7aa73a9d6f5217b2a22c50f702bf7bc4c"
+      },
+      "../src/domain/feature/interfaces/index.ts": {
+        "version": "2c4b615bbc6439690c42552969ecf85a8d995c3fb6934bb68987652461963bc5",
+        "signature": "2c4b615bbc6439690c42552969ecf85a8d995c3fb6934bb68987652461963bc5"
+      },
+      "../src/domain/index.ts": {
+        "version": "37eb91660c9a80fb721d41b8b139e1e3d244a2dd844a033f488d38bfb6ff354b",
+        "signature": "37eb91660c9a80fb721d41b8b139e1e3d244a2dd844a033f488d38bfb6ff354b"
+      },
+      "../src/domain/feature/dto/index.ts": {
+        "version": "6eeeb996a7bf88f73fe524a6ba76fab93d633f5a39aa0c89b05f7dfb39723a4a",
+        "signature": "0e67a33d86efdb6bee6a13a18cd490b97287f3001c1f4af0bee9bd2bc499bad9"
+      },
+      "../src/domain/feature/service/feature.service.ts": {
+        "version": "667702f7e5ff0d18b2eb572a18ca2ff224e7db916280f75cc4aab0307d1ccf30",
+        "signature": "a12e59d3c7889b858be23523207c3b2d273f4b15e3b736902eb9a6d0817e5b1b"
+      },
+      "../src/domain/feature/service/index.ts": {
+        "version": "9753cbce21351342107c7dcec6080465bdecd94d6e098ac9139627e46b254d99",
+        "signature": "9753cbce21351342107c7dcec6080465bdecd94d6e098ac9139627e46b254d99"
+      },
+      "../src/domain/feature/controller/feature.controller.ts": {
+        "version": "ef70d8c2d6670684bc831e44ce3c19006fa8a3cccc748799686af4f7f18680f6",
+        "signature": "e9597d7379cc74ad6ac284ff621e744d904a07d058703c3a4cf909c068bcc95f"
+      },
       "../src/domain/feature/feature.module.ts": {
-        "version": "0eb51be9d7c5eebc510f0f7b5896472a97cb1b3e69e7c6aee2b95a0d48f3adc5",
+        "version": "ca7fcf34affbe6a670438ae3ed8acd1a8822989105259c3b13f7b3c539cbaf93",
         "signature": "852aa9ddd23c4fae3a712234e2016e119e2ca34a55038bedb9ff3755957b366d"
       },
       "../src/domain/feature/index.ts": {
@@ -3125,13 +3161,13 @@
         "version": "a0778d79a9fe2a8cc712b16f3b8938030a8a948b9b5557f85fbbe3f126aca8d5",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
       },
+      "../src/common/decorators/epic.decorator.ts": {
+        "version": "d6ffd5243939f819229b1e2a7efb3ab007e86ebea583d2e6ea8b65ab7d6be296",
+        "signature": "9b3269876ebee03651a6f66ce0136a3640215119cbd6b73f6e9d5297131619ae"
+      },
       "../src/common/decorators/role-user.decorator.ts": {
         "version": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
         "signature": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-      },
-      "../src/domain/index.ts": {
-        "version": "37eb91660c9a80fb721d41b8b139e1e3d244a2dd844a033f488d38bfb6ff354b",
-        "signature": "37eb91660c9a80fb721d41b8b139e1e3d244a2dd844a033f488d38bfb6ff354b"
       },
       "../src/domain/epic/controller/index.ts": {
         "version": "374456fc7a27548e7a9154c3e64441eb3aa2909b18a6a410e0cf2519a585f956",
@@ -3148,6 +3184,10 @@
       "../src/domain/epic/service/index.ts": {
         "version": "7846c6b7faa78b3ce0525af99e8f964d56b0c19def6926a3a2ac4ffc20c0f081",
         "signature": "7846c6b7faa78b3ce0525af99e8f964d56b0c19def6926a3a2ac4ffc20c0f081"
+      },
+      "../src/domain/feature/controller/index.ts": {
+        "version": "c53f904f7af695ce873bf4c95e48addb0312589d56585bc1f9d8ec2f8350779d",
+        "signature": "c53f904f7af695ce873bf4c95e48addb0312589d56585bc1f9d8ec2f8350779d"
       },
       "../src/domain/user/interfaces/iuser.interface.ts": {
         "version": "ebff7255dcdf097781f20e052d7602baf57c64d32b6aa1c300fdcf1b0e8ee799",
@@ -9730,6 +9770,7 @@
         "../src/domain/epic/entities/epic.entity.ts",
         "../src/domain/epic/dtos/index.ts",
         "../node_modules/typeorm/index.d.ts",
+        "../src/domain/user/index.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -9761,24 +9802,11 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../src/domain/feature/controller/feature.controller.ts": [
-        "../node_modules/@nestjs/common/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../src/domain/feature/service/feature.service.ts": [
-        "../node_modules/@nestjs/common/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
       "../src/domain/feature/entities/feature.entity.ts": [
         "../node_modules/typeorm/index.d.ts",
         "../src/domain/user/index.ts",
         "../src/domain/epic/entities/index.ts",
+        "../node_modules/@types/node/os.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -9806,12 +9834,118 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "../src/domain/feature/dto/create-feature.dto.ts": [
+        "../node_modules/class-validator/index.d.ts",
+        "../src/domain/epic/entities/index.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/domain/feature/dto/filterquery.dto.ts": [
+        "../src/domain/feature/entities/feature.entity.ts",
+        "../node_modules/class-validator/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/domain/feature/dto/feature-param-id.dtp.ts": [
+        "../node_modules/class-validator/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/domain/feature/dto/update-status-query.dto.ts": [
+        "../src/domain/feature/entities/feature.entity.ts",
+        "../node_modules/class-validator/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/domain/feature/interfaces/ifeature.interface.ts": [
+        "../src/domain/feature/entities/feature.entity.ts",
+        "../node_modules/typeorm/index.d.ts",
+        "../src/domain/user/index.ts",
+        "../src/domain/feature/dto/create-feature.dto.ts",
+        "../src/domain/feature/dto/filterquery.dto.ts",
+        "../src/domain/feature/dto/feature-param-id.dtp.ts",
+        "../src/domain/feature/dto/update-status-query.dto.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/domain/feature/interfaces/index.ts": [
+        "../src/domain/feature/interfaces/ifeature.interface.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/domain/index.ts": [
+        "../src/domain/user/index.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/domain/feature/dto/index.ts": [
+        "../src/domain/feature/dto/create-feature.dto.ts",
+        "../src/domain/feature/dto/feature-param-id.dtp.ts",
+        "../src/domain/feature/dto/filterquery.dto.ts",
+        "../src/domain/feature/dto/update-status-query.dto.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/domain/feature/service/feature.service.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/typeorm/index.d.ts",
+        "../src/domain/feature/repository/index.ts",
+        "../src/domain/feature/interfaces/index.ts",
+        "../src/domain/index.ts",
+        "../src/domain/feature/entities/index.ts",
+        "../src/domain/feature/dto/index.ts",
+        "../node_modules/typeorm/index.d.ts",
+        "../src/domain/epic/repository/index.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/domain/feature/service/index.ts": [
+        "../src/domain/feature/service/feature.service.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/domain/feature/controller/feature.controller.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/domain/feature/service/index.ts",
+        "../src/domain/feature/dto/index.ts",
+        "../src/domain/feature/entities/index.ts",
+        "../src/domain/index.ts",
+        "../node_modules/class-transformer/index.d.ts",
+        "../src/common/index.ts",
+        "../node_modules/typeorm/index.d.ts",
+        "../node_modules/@types/express/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "../src/domain/feature/feature.module.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../src/domain/feature/controller/feature.controller.ts",
         "../src/domain/feature/service/feature.service.ts",
         "../node_modules/@nestjs/typeorm/index.d.ts",
         "../src/domain/feature/repository/index.ts",
+        "../src/domain/epic/repository/index.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -9851,14 +9985,15 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../src/common/decorators/role-user.decorator.ts": [
+      "../src/common/decorators/epic.decorator.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/domain/epic/entities/epic.entity.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../src/domain/index.ts": [
-        "../src/domain/user/index.ts",
+      "../src/common/decorators/role-user.decorator.ts": [
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -9889,6 +10024,13 @@
       ],
       "../src/domain/epic/service/index.ts": [
         "../src/domain/epic/service/epic.service.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/domain/feature/controller/index.ts": [
+        "../src/domain/feature/controller/feature.controller.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -14910,6 +15052,9 @@
         "../src/config/config.service.ts",
         "../src/config/typeorm.config.ts"
       ],
+      "../src/main/modules/index.ts": [
+        "../src/main/modules/databse.module.ts"
+      ],
       "../src/domain/user/entities/user.entity.ts": [
         "../node_modules/typeorm/index.d.ts"
       ],
@@ -16274,6 +16419,7 @@
         "../src/domain/user/entities/index.ts"
       ],
       "../src/domain/epic/entities/epic.entity.ts": [
+        "../src/domain/user/index.ts",
         "../node_modules/typeorm/index.d.ts"
       ],
       "../src/domain/epic/entities/index.ts": [
@@ -16300,6 +16446,7 @@
       ],
       "../src/domain/epic/service/epic.service.ts": [
         "../src/domain/epic/repository/index.ts",
+        "../src/domain/user/index.ts",
         "../src/domain/epic/entities/epic.entity.ts",
         "../src/domain/epic/dtos/index.ts",
         "../node_modules/typeorm/index.d.ts"
@@ -16321,17 +16468,59 @@
         "../src/domain/feature/entities/feature.entity.ts"
       ],
       "../src/domain/feature/repository/feature.repository.ts": [
-        "../node_modules/typeorm/index.d.ts",
-        "../src/domain/feature/entities/index.ts"
+        "../src/domain/feature/entities/index.ts",
+        "../node_modules/typeorm/index.d.ts"
       ],
       "../src/domain/feature/repository/index.ts": [
         "../src/domain/feature/repository/feature.repository.ts"
       ],
-      "../src/domain/feature/index.ts": [
-        "../src/domain/feature/feature.module.ts"
+      "../src/domain/feature/dto/filterquery.dto.ts": [
+        "../src/domain/feature/entities/feature.entity.ts"
+      ],
+      "../src/domain/feature/dto/update-status-query.dto.ts": [
+        "../src/domain/feature/entities/feature.entity.ts"
+      ],
+      "../src/domain/feature/interfaces/ifeature.interface.ts": [
+        "../src/domain/user/index.ts",
+        "../src/domain/feature/entities/feature.entity.ts",
+        "../src/domain/feature/dto/filterquery.dto.ts",
+        "../src/domain/feature/dto/feature-param-id.dtp.ts",
+        "../src/domain/feature/dto/update-status-query.dto.ts",
+        "../node_modules/typeorm/index.d.ts"
+      ],
+      "../src/domain/feature/interfaces/index.ts": [
+        "../src/domain/feature/interfaces/ifeature.interface.ts"
       ],
       "../src/domain/index.ts": [
         "../src/domain/user/index.ts"
+      ],
+      "../src/domain/feature/dto/index.ts": [
+        "../src/domain/feature/dto/create-feature.dto.ts",
+        "../src/domain/feature/dto/feature-param-id.dtp.ts",
+        "../src/domain/feature/dto/filterquery.dto.ts",
+        "../src/domain/feature/dto/update-status-query.dto.ts"
+      ],
+      "../src/domain/feature/service/feature.service.ts": [
+        "../src/domain/feature/repository/index.ts",
+        "../src/domain/epic/repository/index.ts",
+        "../src/domain/index.ts",
+        "../src/domain/feature/entities/index.ts",
+        "../src/domain/feature/dto/index.ts",
+        "../node_modules/typeorm/index.d.ts",
+        "../src/domain/feature/interfaces/index.ts"
+      ],
+      "../src/domain/feature/service/index.ts": [
+        "../src/domain/feature/service/feature.service.ts"
+      ],
+      "../src/domain/feature/controller/feature.controller.ts": [
+        "../src/domain/feature/service/index.ts",
+        "../src/domain/index.ts",
+        "../src/domain/feature/dto/index.ts",
+        "../src/domain/feature/entities/index.ts",
+        "../node_modules/typeorm/index.d.ts"
+      ],
+      "../src/domain/feature/index.ts": [
+        "../src/domain/feature/feature.module.ts"
       ],
       "../src/domain/epic/controller/index.ts": [
         "../src/domain/epic/controller/epic.controller.ts"
@@ -16346,6 +16535,9 @@
       ],
       "../src/domain/epic/service/index.ts": [
         "../src/domain/epic/service/epic.service.ts"
+      ],
+      "../src/domain/feature/controller/index.ts": [
+        "../src/domain/feature/controller/feature.controller.ts"
       ],
       "../src/domain/user/interfaces/iuser.interface.ts": [
         "../src/domain/user/entities/index.ts"
@@ -17184,6 +17376,7 @@
       "../node_modules/@types/body-parser/index.d.ts",
       "../node_modules/@types/qs/index.d.ts",
       "../node_modules/@types/express/index.d.ts",
+      "../src/common/exceptions/http-exception.filter.ts",
       "../src/common/exceptions/index.ts",
       "../node_modules/rxjs/internal/operators/audit.d.ts",
       "../node_modules/rxjs/internal/operators/audittime.d.ts",
@@ -17322,22 +17515,31 @@
       "../src/domain/epic/service/epic.service.ts",
       "../src/domain/epic/controller/epic.controller.ts",
       "../src/domain/epic/epic.module.ts",
-      "../src/domain/feature/controller/feature.controller.ts",
-      "../src/domain/feature/service/feature.service.ts",
       "../src/domain/feature/entities/feature.entity.ts",
       "../src/domain/feature/entities/index.ts",
-      "../src/domain/feature/repository/feature.repository.ts",
       "../src/domain/feature/repository/index.ts",
+      "../src/domain/feature/dto/create-feature.dto.ts",
+      "../src/domain/feature/dto/filterquery.dto.ts",
+      "../src/domain/feature/dto/feature-param-id.dtp.ts",
+      "../src/domain/feature/dto/update-status-query.dto.ts",
+      "../src/domain/feature/interfaces/ifeature.interface.ts",
+      "../src/domain/feature/interfaces/index.ts",
+      "../src/domain/index.ts",
+      "../src/domain/feature/dto/index.ts",
+      "../src/domain/feature/service/feature.service.ts",
+      "../src/domain/feature/service/index.ts",
+      "../src/domain/feature/controller/feature.controller.ts",
       "../src/domain/feature/feature.module.ts",
       "../src/domain/feature/index.ts",
       "../src/main/app.module.ts",
       "../src/main.ts",
+      "../src/common/decorators/epic.decorator.ts",
       "../src/common/decorators/role-user.decorator.ts",
-      "../src/domain/index.ts",
       "../src/domain/epic/controller/index.ts",
       "../src/domain/epic/interfaces/iepic.interface.ts",
       "../src/domain/epic/interfaces/index.ts",
       "../src/domain/epic/service/index.ts",
+      "../src/domain/feature/controller/index.ts",
       "../src/domain/user/interfaces/iuser.interface.ts",
       "../src/domain/user/interfaces/index.ts",
       "../src/domain/user/service/index.ts",
@@ -17368,7 +17570,7 @@
       "../node_modules/@types/webpack/index.d.ts",
       "../node_modules/@types/yargs-parser/index.d.ts",
       "../node_modules/@types/yargs/index.d.ts",
-      "../src/common/exceptions/http-exception.filter.ts"
+      "../src/domain/feature/repository/feature.repository.ts"
     ]
   },
   "version": "3.8.3"

@@ -42,7 +42,7 @@ __decorate([
 ], Epic.prototype, "status", void 0);
 __decorate([
     typeorm_1.ManyToOne(type => user_1.User),
-    __metadata("design:type", String)
+    __metadata("design:type", user_1.User)
 ], Epic.prototype, "idauth", void 0);
 __decorate([
     typeorm_1.CreateDateColumn({ type: 'timestamp' }),

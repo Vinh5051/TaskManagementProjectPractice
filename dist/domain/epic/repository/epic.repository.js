@@ -15,10 +15,10 @@ let EpicRepository = class EpicRepository extends typeorm_1.Repository {
     async getEpic(status, search) {
         const query = this.createQueryBuilder('epic');
         if (status) {
-            query.orWhere('epic.status = :status', { status });
+            query.andWhere('epic.status = :status', { status });
         }
         if (search) {
-            query.orWhere('epic.nameproject LIKE :search OR epic.title LIKE :search OR epic.description LIKE :search', { search: `%${search}%` });
+            query.andWhere('epic.nameproject LIKE :search OR epic.title LIKE :search OR epic.description LIKE :search', { search: `%${search}%` });
         }
         return await query.getMany();
     }
