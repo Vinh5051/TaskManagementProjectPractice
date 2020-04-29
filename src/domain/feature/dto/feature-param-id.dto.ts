@@ -1,7 +1,7 @@
 import {IsOptional, IsNotEmpty} from 'class-validator';
 
-export class FeatureQueryIdDto {
+export class FeatureParamIdDto {
     @IsOptional()
     @IsNotEmpty()
-    id: string;
+    featureId: string;
 }

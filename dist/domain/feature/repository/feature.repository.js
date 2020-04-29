@@ -8,6 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 const typeorm_1 = require("typeorm");
 const entities_1 = require("../entities");
+const common_1 = require("@nestjs/common");
 let FeatureRepository = class FeatureRepository extends typeorm_1.Repository {
     async saveFeatue(feature) {
         return await this.save(feature);
@@ -20,29 +21,45 @@ let FeatureRepository = class FeatureRepository extends typeorm_1.Repository {
         if (search) {
             query.andWhere('feature.name LIKE :search OR feature.description LIKE :search', { search: `%${search}%` });
         }
-        return query.leftJoinAndSelect('feature.auth', 'user')
+        return await query.leftJoinAndSelect('feature.auth', 'user')
             .leftJoinAndSelect('feature.epic', 'epic')
-            .execute();
+            .getMany();
     }
     async getFeatureById(id) {
-        return await this.createQueryBuilder('feature')
+        const feature = await this.createQueryBuilder('feature')
             .leftJoinAndSelect('feature.auth', 'user')
+            .leftJoinAndSelect('feature.epic', 'epic')
             .where('feature.id = :id', { id })
             .getOne();
+        if (feature && feature == null) {
+            throw new common_1.HttpException('Not found', common_1.HttpStatus.NOT_FOUND);
+        }
+        if (feature) {
+            return feature;
+        }
+        throw new common_1.HttpException('FORBIDDEN', common_1.HttpStatus.FORBIDDEN);
     }
     async updateStatus(id, status) {
-        return await this.createQueryBuilder('feature')
+        const feature = await this.createQueryBuilder('feature')
             .update(entities_1.Feature)
             .set({ status })
             .where('feature.id = :id', { id })
             .execute();
+        if (feature.affected === 0) {
+            throw new common_1.HttpException(`Feature with ID "${id}" was not found!`, common_1.HttpStatus.NOT_FOUND);
+        }
+        return feature;
     }
     async deleteFeature(id) {
-        return await this.createQueryBuilder('feature')
+        const feature = await this.createQueryBuilder('feature')
             .delete()
             .from(entities_1.Feature)
             .where('feature.id = :id', { id })
             .execute();
+        if (feature.affected === 0) {
+            throw new common_1.HttpException(`Feature with ID "${id}" was not found!`, common_1.HttpStatus.NOT_FOUND);
+        }
+        return feature;
     }
 };
 FeatureRepository = __decorate([

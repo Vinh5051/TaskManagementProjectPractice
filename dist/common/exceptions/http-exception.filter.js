@@ -20,7 +20,7 @@ let HttpExceptionFilter = class HttpExceptionFilter {
             timestamp: new Date().toLocaleDateString(),
             path: request.url,
             method: request.method,
-            message: exception.message || null,
+            message: (exception instanceof Error) ? exception.message : null,
         };
         common_1.Logger.error(`${request.method} ${request.url}`, JSON.stringify(errorException), 'ExceptionFillter');
         response.status(status).json(errorException);

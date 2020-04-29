@@ -3,7 +3,7 @@ import {User} from 'src/domain/user';
 import {Epic} from 'src/domain/epic/entities';
 import { type } from 'os';
 
-export enum FeatureSatsus {
+export enum FeatureStatus {
     TODO = 'TO DO',
     IN_PROGRESS = 'IN PROGRESS',
     DONE = 'DONE',
@@ -24,8 +24,8 @@ export class Feature extends BaseEntity {
     @Column({default: 0})
     priority: number;
 
-    @Column({ default: FeatureSatsus.TODO })
-    status: FeatureSatsus;
+    @Column({ default: FeatureStatus.TODO })
+    status: FeatureStatus;
 
     @ManyToOne(type => User)
     auth: User;

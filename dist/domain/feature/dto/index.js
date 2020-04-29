@@ -4,7 +4,7 @@ function __export(m) {
 }
 Object.defineProperty(exports, "__esModule", { value: true });
 __export(require("./create-feature.dto"));
-__export(require("./feature-param-id.dtp"));
-__export(require("./filterQuery.dto"));
-__export(require("./update-status-Query.dto"));
+__export(require("./feature-param-id.dto"));
+__export(require("./filter-query.dto"));
+__export(require("./update-status-query.dto"));
 //# sourceMappingURL=index.js.map

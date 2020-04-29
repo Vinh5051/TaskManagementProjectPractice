@@ -2530,7 +2530,7 @@
         "signature": "ead1ed9dd4874f4907a506a31e4fe9c4e079b42816f6b7ea5016a6d5ddf2fde3"
       },
       "../src/common/exceptions/http-exception.filter.ts": {
-        "version": "0ac5d07aeec69256ae853616802a408de602d44954cc6f2efef953eea5216d03",
+        "version": "fdfa14abea7634345946d9b67ee3e36d9f5142869dbbcf48059500202908c735",
         "signature": "58bb21e51a8351c94c97489e2318fa8329e4c7518ee0f428c51cdb4a36295276"
       },
       "../src/common/exceptions/index.ts": {
@@ -3086,16 +3086,16 @@
         "signature": "9ddd6946599f5d87b2f40d99d860833ef251c02830c8933a889ff33886847a54"
       },
       "../src/domain/feature/entities/feature.entity.ts": {
-        "version": "616c7aac44230e2307f21db379d5b5e13fef4f9ae5e48f23bf1e38070186f2c8",
-        "signature": "4925f80d8342bcc0b514c17771821bbd75f05fbc1bcdb6b56b1fbef2ee656dc6"
+        "version": "aec22a14397ce035f0b6424f7775d663efcd1d4122f588ebbf722e42dd9e98d9",
+        "signature": "858ab4b2c96f13dbfd6139802b1414b4f8177585b05465e421fa42c118ab1ff6"
       },
       "../src/domain/feature/entities/index.ts": {
         "version": "92913153256b27396722be60eda1a9b412b5e6dea5a4f134edd6e218f509de24",
         "signature": "92913153256b27396722be60eda1a9b412b5e6dea5a4f134edd6e218f509de24"
       },
       "../src/domain/feature/repository/feature.repository.ts": {
-        "version": "0fd14eb011dd3d995eef04ee4afefa180800623308bfd408d9aa579936be365d",
-        "signature": "3496bca4cc8012b61a13b037b0466104489399430e998b0af02f5b155ddb19fc"
+        "version": "eb64179b81756f91d7a978830c9797a505d9f16ceb27ad7b2aa33ff7d925c3b1",
+        "signature": "8d4a8bb4749e134464936255ecefc972eea6bbaf37763ffa245a0aa2e4716e79"
       },
       "../src/domain/feature/repository/index.ts": {
         "version": "4fb007a5c5e2559673cb5984c62e4eb716281c2dbac2d70aabfff66f9bd594e9",
@@ -3105,21 +3105,21 @@
         "version": "38603b829f9bf7fd1d8352cdcf85462e149d24f400a16b6d0142d2d775933a78",
         "signature": "cd86786229895999298a94e4a4fab1c3ff40236bea2fdc685535af0515f9a069"
       },
-      "../src/domain/feature/dto/filterquery.dto.ts": {
-        "version": "7e4f76bf12b2e7d8760e82924a07d9027c83f309f34101a81e06f6a8c9af6e7a",
-        "signature": "66b970b2cdab4563ae4160299239575aa071e78be9751b12397820217e409498"
+      "../src/domain/feature/dto/filter-query.dto.ts": {
+        "version": "39fe8f00c1764489dae020d0f4b115117997bba3d7613568bebaa04f3dd86a9b",
+        "signature": "2c6c46c88ce4e37d82132a516315c27b707dc7fb41404f1d0082eda96839d5cc"
       },
-      "../src/domain/feature/dto/feature-param-id.dtp.ts": {
-        "version": "12f5294c201fb1dff6a2538adfa58f49101124e3623f0cb095d19f4f8526d58f",
-        "signature": "716e255f93d46dfa0e2684b2f9398ca6f7aa1cc19de1ff172f909dc5c64b3942"
+      "../src/domain/feature/dto/feature-param-id.dto.ts": {
+        "version": "d751151710a909c318b85eed33d5194fe29d3c199dacd05ac29a1c684e1bba81",
+        "signature": "c8fe4234f92a162f13906e361a4af11be613cc91e7413853dc3b021c1d1fc7f4"
       },
       "../src/domain/feature/dto/update-status-query.dto.ts": {
-        "version": "26dbdf66f4c25618a16c2d733b97f2a364644fe1195d978e3aaadcf507690e77",
-        "signature": "47bfa42f7b3e312ab0bd5914a44037ee938c8733020681a48aa0d1dccc335d6d"
+        "version": "0c0aba5541ae92702ec2978817dc14c55d9e1f2758baf66f204d08ec4df7d8c0",
+        "signature": "08ce3990846d22251ebf61dc56378ed91cda967db970134f2880b5cfe85cb609"
       },
       "../src/domain/feature/interfaces/ifeature.interface.ts": {
-        "version": "49254879ff2f6a2a58f8a9fdf7e1f7cf40065bea0507148d30f9c4efee9cc3be",
-        "signature": "4bcdd939501fa459963ccbf2b57cc9e7aa73a9d6f5217b2a22c50f702bf7bc4c"
+        "version": "bd7104a009378e69152882df07e9690879c7d670f943d9cc5fbb7e10b6830af9",
+        "signature": "c19b276eee8e8d1f7d870e5271b85ecdc0efb251f6a7434d131023e8cf3dfd4e"
       },
       "../src/domain/feature/interfaces/index.ts": {
         "version": "2c4b615bbc6439690c42552969ecf85a8d995c3fb6934bb68987652461963bc5",
@@ -3130,20 +3130,20 @@
         "signature": "37eb91660c9a80fb721d41b8b139e1e3d244a2dd844a033f488d38bfb6ff354b"
       },
       "../src/domain/feature/dto/index.ts": {
-        "version": "6eeeb996a7bf88f73fe524a6ba76fab93d633f5a39aa0c89b05f7dfb39723a4a",
-        "signature": "0e67a33d86efdb6bee6a13a18cd490b97287f3001c1f4af0bee9bd2bc499bad9"
+        "version": "9c48e2423a915151b5f0701b95101f0bac9da5d9f7e95b168a6ad0b07e6ad6ea",
+        "signature": "ee565babaf7bdfa4bc1f7373af03dab2c104820b0b54f15628a16454f26e5209"
       },
       "../src/domain/feature/service/feature.service.ts": {
-        "version": "667702f7e5ff0d18b2eb572a18ca2ff224e7db916280f75cc4aab0307d1ccf30",
-        "signature": "a12e59d3c7889b858be23523207c3b2d273f4b15e3b736902eb9a6d0817e5b1b"
+        "version": "510dfd7a9c6e8f92b80205664988f075da016e1ba470a6796dc9ddde6ff0524a",
+        "signature": "0f14c212d2e1f0fbbee50f1c2dd1aa56a4f0038d62f1eba05b3520105781ae8d"
       },
       "../src/domain/feature/service/index.ts": {
         "version": "9753cbce21351342107c7dcec6080465bdecd94d6e098ac9139627e46b254d99",
         "signature": "9753cbce21351342107c7dcec6080465bdecd94d6e098ac9139627e46b254d99"
       },
       "../src/domain/feature/controller/feature.controller.ts": {
-        "version": "ef70d8c2d6670684bc831e44ce3c19006fa8a3cccc748799686af4f7f18680f6",
-        "signature": "e9597d7379cc74ad6ac284ff621e744d904a07d058703c3a4cf909c068bcc95f"
+        "version": "c7cc7956a65b93565954914377507d1178095a398a5c266aee688e9c49e57baa",
+        "signature": "4d82372d1c3c1e6ac584e032abde37470d5ff43fffd3a520407fc5052c26d24e"
       },
       "../src/domain/feature/feature.module.ts": {
         "version": "ca7fcf34affbe6a670438ae3ed8acd1a8822989105259c3b13f7b3c539cbaf93",
@@ -9822,6 +9822,7 @@
       "../src/domain/feature/repository/feature.repository.ts": [
         "../node_modules/typeorm/index.d.ts",
         "../src/domain/feature/entities/index.ts",
+        "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -9842,7 +9843,7 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../src/domain/feature/dto/filterquery.dto.ts": [
+      "../src/domain/feature/dto/filter-query.dto.ts": [
         "../src/domain/feature/entities/feature.entity.ts",
         "../node_modules/class-validator/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
@@ -9850,7 +9851,7 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../src/domain/feature/dto/feature-param-id.dtp.ts": [
+      "../src/domain/feature/dto/feature-param-id.dto.ts": [
         "../node_modules/class-validator/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
@@ -9870,8 +9871,8 @@
         "../node_modules/typeorm/index.d.ts",
         "../src/domain/user/index.ts",
         "../src/domain/feature/dto/create-feature.dto.ts",
-        "../src/domain/feature/dto/filterquery.dto.ts",
-        "../src/domain/feature/dto/feature-param-id.dtp.ts",
+        "../src/domain/feature/dto/filter-query.dto.ts",
+        "../src/domain/feature/dto/feature-param-id.dto.ts",
         "../src/domain/feature/dto/update-status-query.dto.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
@@ -9894,8 +9895,8 @@
       ],
       "../src/domain/feature/dto/index.ts": [
         "../src/domain/feature/dto/create-feature.dto.ts",
-        "../src/domain/feature/dto/feature-param-id.dtp.ts",
-        "../src/domain/feature/dto/filterquery.dto.ts",
+        "../src/domain/feature/dto/feature-param-id.dto.ts",
+        "../src/domain/feature/dto/filter-query.dto.ts",
         "../src/domain/feature/dto/update-status-query.dto.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
@@ -16474,7 +16475,7 @@
       "../src/domain/feature/repository/index.ts": [
         "../src/domain/feature/repository/feature.repository.ts"
       ],
-      "../src/domain/feature/dto/filterquery.dto.ts": [
+      "../src/domain/feature/dto/filter-query.dto.ts": [
         "../src/domain/feature/entities/feature.entity.ts"
       ],
       "../src/domain/feature/dto/update-status-query.dto.ts": [
@@ -16483,8 +16484,8 @@
       "../src/domain/feature/interfaces/ifeature.interface.ts": [
         "../src/domain/user/index.ts",
         "../src/domain/feature/entities/feature.entity.ts",
-        "../src/domain/feature/dto/filterquery.dto.ts",
-        "../src/domain/feature/dto/feature-param-id.dtp.ts",
+        "../src/domain/feature/dto/filter-query.dto.ts",
+        "../src/domain/feature/dto/feature-param-id.dto.ts",
         "../src/domain/feature/dto/update-status-query.dto.ts",
         "../node_modules/typeorm/index.d.ts"
       ],
@@ -16496,8 +16497,8 @@
       ],
       "../src/domain/feature/dto/index.ts": [
         "../src/domain/feature/dto/create-feature.dto.ts",
-        "../src/domain/feature/dto/feature-param-id.dtp.ts",
-        "../src/domain/feature/dto/filterquery.dto.ts",
+        "../src/domain/feature/dto/feature-param-id.dto.ts",
+        "../src/domain/feature/dto/filter-query.dto.ts",
         "../src/domain/feature/dto/update-status-query.dto.ts"
       ],
       "../src/domain/feature/service/feature.service.ts": [
@@ -17517,10 +17518,11 @@
       "../src/domain/epic/epic.module.ts",
       "../src/domain/feature/entities/feature.entity.ts",
       "../src/domain/feature/entities/index.ts",
+      "../src/domain/feature/repository/feature.repository.ts",
       "../src/domain/feature/repository/index.ts",
       "../src/domain/feature/dto/create-feature.dto.ts",
-      "../src/domain/feature/dto/filterquery.dto.ts",
-      "../src/domain/feature/dto/feature-param-id.dtp.ts",
+      "../src/domain/feature/dto/filter-query.dto.ts",
+      "../src/domain/feature/dto/feature-param-id.dto.ts",
       "../src/domain/feature/dto/update-status-query.dto.ts",
       "../src/domain/feature/interfaces/ifeature.interface.ts",
       "../src/domain/feature/interfaces/index.ts",
@@ -17528,7 +17530,6 @@
       "../src/domain/feature/dto/index.ts",
       "../src/domain/feature/service/feature.service.ts",
       "../src/domain/feature/service/index.ts",
-      "../src/domain/feature/controller/feature.controller.ts",
       "../src/domain/feature/feature.module.ts",
       "../src/domain/feature/index.ts",
       "../src/main/app.module.ts",
@@ -17570,7 +17571,7 @@
       "../node_modules/@types/webpack/index.d.ts",
       "../node_modules/@types/yargs-parser/index.d.ts",
       "../node_modules/@types/yargs/index.d.ts",
-      "../src/domain/feature/repository/feature.repository.ts"
+      "../src/domain/feature/controller/feature.controller.ts"
     ]
   },
   "version": "3.8.3"

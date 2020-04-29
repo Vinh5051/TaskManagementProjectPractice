@@ -9,19 +9,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const feature_entity_1 = require("../entities/feature.entity");
 const class_validator_1 = require("class-validator");
-class UpdateStatusQueryDto {
+class FeatureParamIdDto {
 }
 __decorate([
     class_validator_1.IsOptional(),
     class_validator_1.IsNotEmpty(),
     __metadata("design:type", String)
-], UpdateStatusQueryDto.prototype, "id", void 0);
-__decorate([
-    class_validator_1.IsOptional(),
-    class_validator_1.IsIn([feature_entity_1.FeatureStatus.TODO, feature_entity_1.FeatureStatus.IN_PROGRESS, feature_entity_1.FeatureStatus.DONE, feature_entity_1.FeatureStatus.BUG]),
-    __metadata("design:type", String)
-], UpdateStatusQueryDto.prototype, "status", void 0);
-exports.UpdateStatusQueryDto = UpdateStatusQueryDto;
-//# sourceMappingURL=update-status-query.dto.js.map
+], FeatureParamIdDto.prototype, "featureId", void 0);
+exports.FeatureParamIdDto = FeatureParamIdDto;
+//# sourceMappingURL=feature-param-id.dto.js.map

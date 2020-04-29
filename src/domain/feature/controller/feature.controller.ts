@@ -1,6 +1,6 @@
-import { Controller, Post, Body, Get, Query, Param, Put, UseGuards, Delete } from '@nestjs/common';
+import { Controller, Post, Body, Get, Query, Param, Put, UseGuards, Delete, HttpException, HttpStatus } from '@nestjs/common';
 import {FeatureService} from '../service';
-import {CreateFeatureDto, FilterQuryDto, FeatureQueryIdDto, UpdateStatusQueryDto} from '../dto';
+import {CreateFeatureDto, FilterQuryDto, FeatureParamIdDto, UpdateStatusQueryDto} from '../dto';
 import {Feature} from '../entities';
 import { User } from 'src/domain';
 import { plainToClass } from 'class-transformer';
@@ -8,7 +8,7 @@ import { jwt, AuthGuard } from 'src/common';
 import { UpdateResult, DeleteResult } from 'typeorm';
 import {query} from 'express';
 
-@Controller('feature')
+@Controller('features')
 export class FeatureController {
     constructor(private readonly featureService: FeatureService) {}
 
@@ -24,9 +24,10 @@ export class FeatureController {
         return await this.featureService.getFeature(filterQueryDto);
     }
 
-    @Post('/')
-    async getFeatureById(@Query() featureQueryIdDto: FeatureQueryIdDto): Promise<Feature> {
-        return await this.featureService.getFeatureById(featureQueryIdDto);
+    @Get('/:featureId')
+    async getFeatureById(@Param('featureId') featureQueryIdDto: FeatureParamIdDto): Promise<Feature> {
+        const feature = await this.featureService.getFeatureById(featureQueryIdDto);
+        return feature;
     }
 
     @Put('/updatestatus/')
@@ -34,14 +35,14 @@ export class FeatureController {
         return await this.featureService.updateStatus(updateStatusQueryDto);
     }
 
-    @Delete('/')
-    async deleteFeature(@Query() featureQueryDto: FeatureQueryIdDto): Promise<DeleteResult> {
+    @Delete('/:featureId')
+    async deleteFeature(@Param('featureId') featureQueryDto: FeatureParamIdDto): Promise<DeleteResult> {
         return await this.featureService.deleteFeature(featureQueryDto);
     }
 
     @Get('/admit')
     @UseGuards(AuthGuard)
-    async admitFeature(@jwt() user: User, @Query() featureQueryDto: FeatureQueryIdDto): Promise<Feature> {
+    async admitFeature(@jwt() user: User, @Query() featureQueryDto: FeatureParamIdDto): Promise<Feature> {
         return await this.featureService.admitFeature(user, featureQueryDto);
     }
 

@@ -31,7 +31,8 @@ let FeatureController = class FeatureController {
         return await this.featureService.getFeature(filterQueryDto);
     }
     async getFeatureById(featureQueryIdDto) {
-        return await this.featureService.getFeatureById(featureQueryIdDto);
+        const feature = await this.featureService.getFeatureById(featureQueryIdDto);
+        return feature;
     }
     async updateStatus(updateStatusQueryDto) {
         return await this.featureService.updateStatus(updateStatusQueryDto);
@@ -59,10 +60,10 @@ __decorate([
     __metadata("design:returntype", Promise)
 ], FeatureController.prototype, "getFeature", null);
 __decorate([
-    common_1.Post('/'),
-    __param(0, common_1.Query()),
+    common_1.Get('/:featureId'),
+    __param(0, common_1.Param('featureId')),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [dto_1.FeatureQueryIdDto]),
+    __metadata("design:paramtypes", [dto_1.FeatureParamIdDto]),
     __metadata("design:returntype", Promise)
 ], FeatureController.prototype, "getFeatureById", null);
 __decorate([
@@ -73,10 +74,10 @@ __decorate([
     __metadata("design:returntype", Promise)
 ], FeatureController.prototype, "updateStatus", null);
 __decorate([
-    common_1.Delete('/'),
-    __param(0, common_1.Query()),
+    common_1.Delete('/:featureId'),
+    __param(0, common_1.Param('featureId')),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [dto_1.FeatureQueryIdDto]),
+    __metadata("design:paramtypes", [dto_1.FeatureParamIdDto]),
     __metadata("design:returntype", Promise)
 ], FeatureController.prototype, "deleteFeature", null);
 __decorate([
@@ -84,11 +85,11 @@ __decorate([
     common_1.UseGuards(common_2.AuthGuard),
     __param(0, common_2.jwt()), __param(1, common_1.Query()),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [domain_1.User, dto_1.FeatureQueryIdDto]),
+    __metadata("design:paramtypes", [domain_1.User, dto_1.FeatureParamIdDto]),
     __metadata("design:returntype", Promise)
 ], FeatureController.prototype, "admitFeature", null);
 FeatureController = __decorate([
-    common_1.Controller('feature'),
+    common_1.Controller('features'),
     __metadata("design:paramtypes", [service_1.FeatureService])
 ], FeatureController);
 exports.FeatureController = FeatureController;

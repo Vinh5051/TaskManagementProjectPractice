@@ -1,7 +1,7 @@
 import { BaseEntity } from 'typeorm';
 import { User } from 'src/domain/user';
 import { Epic } from 'src/domain/epic/entities';
-export declare enum FeatureSatsus {
+export declare enum FeatureStatus {
     TODO = "TO DO",
     IN_PROGRESS = "IN PROGRESS",
     DONE = "DONE",
@@ -12,7 +12,7 @@ export declare class Feature extends BaseEntity {
     name: string;
     description: string;
     priority: number;
-    status: FeatureSatsus;
+    status: FeatureStatus;
     auth: User;
     user: User;
     epic: Epic;

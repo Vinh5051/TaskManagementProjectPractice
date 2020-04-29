@@ -1,4 +1,4 @@
-import { FeatureSatsus } from '../entities/feature.entity';
+import { FeatureStatus } from '../entities/feature.entity';
 import {IsOptional, IsNotEmpty, IsIn} from 'class-validator';
 export class UpdateStatusQueryDto {
     @IsOptional()
@@ -6,6 +6,6 @@ export class UpdateStatusQueryDto {
     id: string;
 
     @IsOptional()
-    @IsIn([FeatureSatsus.TODO, FeatureSatsus.IN_PROGRESS, FeatureSatsus.DONE, FeatureSatsus.BUG])
-    status: FeatureSatsus;
+    @IsIn([FeatureStatus.TODO, FeatureStatus.IN_PROGRESS, FeatureStatus.DONE, FeatureStatus.BUG])
+    status: FeatureStatus;
 }

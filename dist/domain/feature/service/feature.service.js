@@ -26,29 +26,29 @@ let FeatureService = class FeatureService {
         feature.auth = user;
         const epic = await this.epicRepository.getEpicById(epicId);
         feature.epic = epic;
-        return await this.featureRepository.saveFeatue(feature);
+        return await this.featureRepository.save(feature);
     }
     async getFeature(filterQueryDto) {
         const { staus, search } = filterQueryDto;
         return await this.featureRepository.getFeature(staus, search);
     }
     async getFeatureById(featureQueryIdDto) {
-        const { id } = featureQueryIdDto;
-        return await this.featureRepository.getFeatureById(id);
+        const { featureId } = featureQueryIdDto;
+        return await this.featureRepository.getFeatureById(featureId);
     }
     async updateStatus(updateStatusQueryDto) {
         const { id, status } = updateStatusQueryDto;
         return await this.featureRepository.updateStatus(id, status);
     }
     async deleteFeature(featureQueryIdDto) {
-        const id = featureQueryIdDto.id;
-        return await this.featureRepository.deleteFeature(id);
+        const { featureId } = featureQueryIdDto;
+        return await this.featureRepository.deleteFeature(featureId);
     }
-    async admitFeature(user, featureQueryDto) {
-        const { id } = featureQueryDto;
-        const feature = await this.featureRepository.getFeatureById(id);
+    async admitFeature(user, featureQueryIdDto) {
+        const { featureId } = featureQueryIdDto;
+        const feature = await this.featureRepository.getFeatureById(featureId);
         feature.user = user;
-        return await this.featureRepository.saveFeatue(feature);
+        return await this.featureRepository.save(feature);
     }
 };
 FeatureService = __decorate([

@@ -1,5 +1,6 @@
 import { EntityRepository, Repository, UpdateResult, DeleteResult } from 'typeorm';
-import {Feature, FeatureSatsus} from '../entities';
+import {Feature, FeatureStatus} from '../entities';
+import { HttpException, HttpStatus } from '@nestjs/common';
 
 @EntityRepository(Feature)
 export class FeatureRepository extends Repository<Feature> {
@@ -8,7 +9,7 @@ export class FeatureRepository extends Repository<Feature> {
         return await this.save(feature);
     }
 
-    async getFeature(status: FeatureSatsus, search: string): Promise<Feature[]> {
+    async getFeature(status: FeatureStatus, search: string): Promise<Feature[]> {
         const query = await this.createQueryBuilder('feature');
 
         if (status) {
@@ -18,33 +19,57 @@ export class FeatureRepository extends Repository<Feature> {
             query.andWhere('feature.name LIKE :search OR feature.description LIKE :search', {search: `%${search}%`});
         }
 
-        return query.leftJoinAndSelect('feature.auth', 'user')
+        return await query.leftJoinAndSelect('feature.auth', 'user')
+                    // .leftJoinAndSelect('feature.user', 'user')
                     .leftJoinAndSelect('feature.epic', 'epic')
-                    .execute();
+                    .getMany();
     }
 
     async getFeatureById(id: string): Promise<Feature> {
-        return await this.createQueryBuilder('feature')
+        const feature = await this.createQueryBuilder('feature')
                             .leftJoinAndSelect('feature.auth', 'user')
+                            // .leftJoinAndSelect('feature.user', 'user')
+                            .leftJoinAndSelect('feature.epic', 'epic')
                             .where('feature.id = :id', {id})
                             .getOne();
 
+        if (feature && feature == null) {
+            throw new HttpException('Not found', HttpStatus.NOT_FOUND);
+        }
+
+        if (feature) {
+            return feature;
+        }
+
+        throw new HttpException('FORBIDDEN', HttpStatus.FORBIDDEN);
     }
 
-    async updateStatus(id: string, status: FeatureSatsus): Promise<UpdateResult> {
-        return await this.createQueryBuilder('feature')
+    async updateStatus(id: string, status: FeatureStatus): Promise<UpdateResult> {
+        const feature = await this.createQueryBuilder('feature')
                             .update(Feature)
                             .set({status})
                             .where('feature.id = :id', {id})
                             .execute();
+
+        if (feature.affected === 0 ) {
+            throw new HttpException(`Feature with ID "${id}" was not found!`, HttpStatus.NOT_FOUND);
+        }
+
+        return feature;
     }
 
     async deleteFeature(id: string): Promise<DeleteResult> {
-        return await this.createQueryBuilder('feature')
+        const feature =  await this.createQueryBuilder('feature')
                             .delete()
                             .from(Feature)
                             .where('feature.id = :id', {id})
                             .execute();
+
+        if (feature.affected === 0 ) {
+            throw new HttpException(`Feature with ID "${id}" was not found!`, HttpStatus.NOT_FOUND);
+        }
+
+        return feature;
     }
 
 }

@@ -12,13 +12,13 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const typeorm_1 = require("typeorm");
 const user_1 = require("../../user");
 const entities_1 = require("../../epic/entities");
-var FeatureSatsus;
-(function (FeatureSatsus) {
-    FeatureSatsus["TODO"] = "TO DO";
-    FeatureSatsus["IN_PROGRESS"] = "IN PROGRESS";
-    FeatureSatsus["DONE"] = "DONE";
-    FeatureSatsus["BUG"] = "BUG";
-})(FeatureSatsus = exports.FeatureSatsus || (exports.FeatureSatsus = {}));
+var FeatureStatus;
+(function (FeatureStatus) {
+    FeatureStatus["TODO"] = "TO DO";
+    FeatureStatus["IN_PROGRESS"] = "IN PROGRESS";
+    FeatureStatus["DONE"] = "DONE";
+    FeatureStatus["BUG"] = "BUG";
+})(FeatureStatus = exports.FeatureStatus || (exports.FeatureStatus = {}));
 let Feature = class Feature extends typeorm_1.BaseEntity {
 };
 __decorate([
@@ -38,7 +38,7 @@ __decorate([
     __metadata("design:type", Number)
 ], Feature.prototype, "priority", void 0);
 __decorate([
-    typeorm_1.Column({ default: FeatureSatsus.TODO }),
+    typeorm_1.Column({ default: FeatureStatus.TODO }),
     __metadata("design:type", String)
 ], Feature.prototype, "status", void 0);
 __decorate([
